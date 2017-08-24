@@ -3,7 +3,7 @@
   "description": "A simple server for saying hello and identifying the host.",
   "author": "John McKenzie",
   "license": "MIT",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "main": "server.js",
   "dependencies": {
     "etag": "^1.8.0",
