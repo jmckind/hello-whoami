@@ -11,6 +11,7 @@ var server = http.createServer(function(request, response) {
 
   response.write("Hello, I am " + process.env.HOSTNAME + "\n");
   response.write("I am running version " + settings.version + "\n");
+  response.write(new Date().toUTCString() + "\n");
 
   response.end();
 });
