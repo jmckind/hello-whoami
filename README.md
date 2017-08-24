@@ -10,10 +10,18 @@ Run a docker container locally on port `8080`.
 docker run --rm -it -p 8080:80 -v `pwd`:/opt/hello node:8-alpine /bin/sh
 ```
 
-Once connected to the docker container, run the server.
+Once connected to the docker container, navigate to the source directory and
+install the required modules.
 
 ```
-node /opt/hello/server.js
+cd /opt/hello
+npm install
+```
+
+Finally, start the development server.
+
+```
+node server.js
 ```
 
 ## Deployment
